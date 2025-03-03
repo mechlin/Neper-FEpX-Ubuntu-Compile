@@ -18,7 +18,7 @@ sudo apt update -y && \
 
 #---Download and extract Gmsh sourcecode from---
 #   https://gmsh.info/
-cd /home/mechlin
+cd /opt/pollock
 wget -O gmsh-4.13.1-source.tgz "https://gmsh.info/src/gmsh-4.13.1-source.tgz"
 tar -xf gmsh-4.13.1-source.tgz
 
@@ -30,7 +30,7 @@ make
 make test
 make install
 
-cd ~
+cd /opt/pollock
 git clone https://github.com/rquey/neper.git neper
 cd neper/src
 mkdir build
@@ -47,7 +47,7 @@ sudo apt install -y \
       openmpi-common\ 
       libopenmpi-dev -y
 
-cd ~
+cd /opt/pollock
 git clone https://github.com/neperfepx/fepx.git fepx
 cd fepx/src
 mkdir build

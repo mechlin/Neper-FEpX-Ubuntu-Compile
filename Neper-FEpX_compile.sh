@@ -13,6 +13,7 @@ sudo apt update -y && \
 	    cmake \
 	    tar \
 	    git \
+     	    texlive-full \
 	    wget
 		
 
